@@ -2,6 +2,7 @@
 Author: Size Liu sliu236@ucsc.edu
 
 This is assignment 0 for CSE160. This project contain two main folder: **lib **and** src**
+
 **lib contains:**
 cuon-matrix-cse160.js (Libraries that are indispensable for running this project!)
 cuon-utils.js 
