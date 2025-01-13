@@ -1,0 +1,66 @@
+<!-- [student's name: Size Liu]
+[sliu236@ucsc.edu 1852375]
+
+Notes to Grader:
+[N/A]*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ASG 0</title>
+
+    <!-- Load external libraries -->
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+
+    <script src="asg0.js"></script>
+    
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+
+    </br>
+    <!-- Draw button -->
+    <!-- <input type="button" value="Draw" onclick=""></br></br> -->
+    <br>
+    <div>
+      <label for="v1x">v1 x:</label>
+      <input type="number" id="v1x" name="v1x" step="1.0" value="2.25">
+      <label for="v1y">y:</label>
+      <input type="number" id="v1y" name="v1y" step="1.0" value="2.25">
+      <br><br>
+      <label for="v2x">v2 x:</label>
+      <input type="number" id="v2x" name="v2x" step="1.0" value="2.25">
+      <label for="v2y">y:</label>
+      <input type="number" id="v2y" name="v2y" step="1.0" value="2.25">
+      <br><br>
+      <input type="button" value="Draw" onclick="handleDrawEvent()">
+    </div>
+
+    <div>
+      <label for="operation">Operation:</label>
+      <select id="operation" name="operation">
+        <option value="add">Add</option>
+        <option value="sub">Subtract</option>
+        <option value="mul">Multiply</option>
+        <option value="div">Divide</option>
+        <option value="magnitude">Magnitude</option>
+        <option value="normalize">Normalize</option>
+        <option value="angle">Angle between</option>
+        <option value="area">Area</option>
+      </select>
+    
+      <label for="scalar">Scalar (for mul/div):</label>
+      <input type="number" id="scalar" name="scalar" step="0.1" value="1">
+    
+      <input type="button" value="Draw" onclick="handleDrawOperationEvent()">
+    
+    </div>
+  </body>
+</html>
